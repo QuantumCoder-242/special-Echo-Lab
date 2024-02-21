@@ -1,0 +1,146 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1617802690658-1173a812650d?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MDg1NTI1MDV8&ixlib=rb-4.0.3&q=85");
+  background-size: cover; /* Cover the entire page */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-attachment: fixed; /* Optional: keeps the background image fixed during scroll */
+}
+
+.button-class:hover {
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: translateY(-2px);
+}
+
+.card-footer-buttons {
+  display: flex;
+  justify-content: center; /* Center buttons horizontally */
+  gap: 10px; /* Space between buttons */
+}
+
+.card .card-header {
+  background-color: black; /* Blue; adjust as needed */
+  color: white; /* White text color */
+  text-align: center;
+}
+
+.card-body {
+  font-family: "Merriweather", serif;
+  text-align: center;
+}
+
+.card .card-footer {
+  background-color: black; /* Dark gray; adjust as needed */
+  color: white; /* White text color */
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  min-height: 5vh; /* Make container at least as tall as the viewport */
+  padding: 20px; /* Provide some padding around the cards */
+  margin-top: 75px;
+  padding-bottom: 150px;
+}
+
+.row {
+  width: 100%;
+  max-width: 1500px; /* Adjust this value based on your design needs */
+  margin: 0 auto; /* This ensures the row is centered within its parent */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px; /* This creates space between the cards */
+  justify-content: center; /* This centers the cards in the row when they don't fill the entire width */
+}
+
+.card:hover {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth transition for transform and shadow */
+  transform: translateY(-5px); /* Lift the card up slightly */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Increase shadow for a "raised" effect */
+}
+
+.game-title {
+  font-size: 24px; /* Adjust the size as needed */
+  font-weight: bold;
+  color: #007bff; /*  color: #007bff; Use a color that matches your theme */
+  margin-bottom: 10px; /* Adds some space below the title */
+}
+
+.play-button {
+  font-size: 16px;
+  background-color: black; /* A green color to signify action */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.play-button:hover {
+  background-color: #218838; /* Slightly darker green on hover */
+}
+
+.game-thumbnail {
+  width: 100px; /* Adjust as necessary */
+  height: auto;
+  border-radius: 5px; /* Optional: for rounded corners */
+  margin-right: 15px; /* Adds spacing between image and text */
+}
+
+.title-container {
+  text-align: center; /* Centers the title */
+  padding: 20px 0; /* Adds some spacing around the title */
+  margin-top: 20px; /* Additional spacing from the top, adjust as needed */
+}
+
+.title-container h1 {
+  font-size: 2.5rem; /* Adjusts the font size */
+  color: black; /* color: #007bff; Adjusts the color to fit the theme */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a shadow for depth */
+}
+
+.welcome-message p {
+  font-size: 1.1rem; /* Adjust the font size as needed */
+  text-align: center; /* Center the text */
+  margin: 20px auto; /* Add some top and bottom margin */
+  max-width: 80%; /* Limit the width of the message */
+  line-height: 1.6; /* Improve readability */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.welcome-message {
+  animation: fadeIn 2s ease-out;
+  opacity: 0; /* Start with the element invisible */
+  animation-fill-mode: forwards; /* Keep the element visible after the animation completes */
+}
+
+.welcome-message p {
+  font-family: "Merriweather", serif;
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 80%;
+  line-height: 1.6;
+  color: black; /* color: #4a90e2; Example color: a pleasant shade of blue */
+}
+
+footer {
+  margin-top: 500px;
+}
+
+.card .card-img {
+  width: 100%; /* Make the image responsive by setting its width to 100% of the card body */
+  height: auto; /* Maintain the aspect ratio */
+  margin-bottom: 15px; /* Add some space between the image and the text below it */
+}
